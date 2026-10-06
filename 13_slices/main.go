@@ -3,7 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	//slices are the most common collection type in Go. They are more flexible than arrays and provide a powerful way to work with sequences of data. A slice is a dynamically-sized, flexible view into the elements of an array. It is a descriptor of an array segment and consists of a pointer to the array, the length of the segment, and its capacity.
+	//slices are the most common collection type in Go. They are more flexible than arrays and provide a powerful way to work with sequences of data. 
+	// A slice is a dynamically-sized, flexible view into the elements of an array. 
+	// It is a descriptor of an array segment and consists of a pointer to the array, the length of the segment, and its capacity.
 
 	//slices are like arraylist in java
 	// []type{...}
@@ -16,5 +18,6 @@ func main() {
 	nums = append(nums, 2, 3)
 	fmt.Println(nums)
 
-	//slices are reference types, which means that when you assign a slice to another variable, both variables point to the same underlying array. Modifying one slice will affect the other since they share the same data.
+	//slices are reference types, which means that when you assign a slice to another variable, both variables point to the same underlying array. 
+	// Modifying one slice will affect the other since they share the same data.
 }

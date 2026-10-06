@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	//size is part of the type of an array, so arrays cannot be resized.
 	var marks [3]int = [3]int{10,20,30} //this right side is called array literal
 	fmt.Println(marks)
 	

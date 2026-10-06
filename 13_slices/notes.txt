@@ -1,0 +1,42 @@
+Slice = Pointer + Length + Capacity
+
+Pointer
+→ points to the first element of the slice
+→ tells where the slice starts
+
+Length
+→ number of elements currently in the slice
+→ len(s)
+
+Capacity
+→ number of elements available from the slice's starting
+  position to the end of the underlying array
+→ cap(s)
+
+Slice = Pointer + Length + Capacity
+
+Pointer
+→ points to the first element of the slice
+→ tells where the slice starts
+
+Length
+→ number of elements currently in the slice
+→ len(s)
+
+Capacity
+→ number of elements available from the slice's starting
+  position to the end of the underlying array
+→ cap(s)
+
+arr := [6]int{10, 20, 30, 40, 50, 60}
+s := arr[2:5]
+
+s = [30 40 50]
+
+Pointer  → 30
+Length   = 3
+Capacity = 4
+
+One important correction to a common explanation: the pointer is conceptual here. 
+In Go's language specification, a slice is described by its pointer/length/capacity behavior;
+you normally don't manipulate the pointer yourself.

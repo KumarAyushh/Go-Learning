@@ -1,0 +1,36 @@
+1. s := []int{1,2,3,4,5}
+
+   [1 2 3 4 5]
+    ↑
+   len = 5
+   cap = 5
+
+
+2. s = s[:0]
+
+   []
+    ↑
+   [1 2 3 4 5]   ← underlying array still exists
+
+   len = 0
+   cap = 5
+
+
+3. s = s[:4]
+
+   [1 2 3 4]
+    ↑
+   [1 2 3 4 5]   ← same underlying array
+
+   len = 4
+   cap = 5
+
+
+4. s = s[2:]
+
+   [3 4]
+      ↑
+   [1 2 3 4 5]
+
+   len = 2
+   cap = 3
